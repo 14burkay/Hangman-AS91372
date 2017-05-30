@@ -1,0 +1,276 @@
+
+#Kayla Burton
+#6/05/17
+
+import random  #Used to chosen a random word from set list
+
+def replay():
+    game_amount = int(input("How many game do you want to play, 3 games maximum."))
+    if game_amount <= 3 and game_amount > 0:
+        for game in range(game_amount):
+            print(replay())
+    else:
+    
+        
+Game_amount <= 3 or > 0 
+Repeat the game this amount of time
+Try and except for any erroneous data e.g. no an int, too high or too low a number
+
+def random_word():
+    words = ["skyline", "detonator", "believable", "bridge", "apple", "playground", "daisy", "zombie", "graveyard", "binocular", "mountain", "analyse"]
+    chosen_word = random.choice(words).lower() #chosen random word
+    guess_word = []
+    for letter in chosen_word:
+        guess_word.append('_') # Has one _ for each letter of random word
+    print(guess_word)
+
+#def guess(players_guesses):
+#    if len(player_guess) > 1: # check the input is only one letter
+#        print("That is more than one letter. Please try again.")
+#        continue
+#    elif player_guess in guessed_letters: # check it letter hasn't been guessed already
+#        print("You have already guessed that letter. Please try again.")
+#        continue
+#    else:
+#        pass
+
+players_guess = None
+already_guessed = []
+players_attempts = 10
+HANGMAN = ["00000000000000000",
+"""    1           
+    1           
+    1          
+    1           
+    1           
+    1            
+    1             
+    1           
+    1            
+    1                    
+    1
+ 00000000000000000""",
+"""222222222222222222
+    1           2
+    1           
+    1           
+    1           
+    1           
+    1            
+    1             
+    1           
+    1            
+    1                    
+    1
+ 00000000000000000""",
+ 
+"""222222222222222222
+    1           2
+    1           3
+    1          3 3
+    1           3
+    1           
+    1            
+    1             
+    1           
+    1            
+    1                    
+    1
+ 00000000000000000""",
+ 
+"""222222222222222222
+    1           2
+    1           3
+    1          3 3
+    1           3
+    1           4
+    1           4 
+    1           4  
+    1           
+    1            
+    1                    
+    1
+ 00000000000000000"""
+"""222222222222222222
+    1           2
+    1           3
+    1          3 3
+    1           3
+    1          54
+    1         5 4 
+    1        5  4  
+    1           
+    1            
+    1                    
+    1
+ 00000000000000000""",
+ 
+"""222222222222222222
+    1           2
+    1           3
+    1          3 3
+    1           3
+    1          546
+    1         5 4 6
+    1        5  4  6
+    1           
+    1            
+    1                    
+    1
+ 00000000000000000""",
+
+"""222222222222222222
+    1           2
+    1           3
+    1          3 3
+    1           3
+    1          546
+    1         5 4 6
+    1        5  4  6
+    1          7 
+    1         7   
+    1        7            
+    1
+ 00000000000000000""",
+
+"""222222222222222222
+    1           2
+    1           3
+    1          3 3
+    1           3
+    1          546
+    1         5 4 6
+    1        5  4  6
+    1          7 8
+    1         7   8
+    1       7       8
+    1
+ 00000000000000000""",
+"""222222222222222222
+    1           2
+    1           3
+    1          3 3
+    1           3
+    1          546
+    1         5 4 6
+    1        5  4  6
+    1          7 8
+    1         7   8
+    1        7     899
+    1
+ 00000000000000000""",
+
+
+"""222222222222222222
+    1           2
+    1           3
+    1          3 3
+    1           3
+    1          546
+    1         5 4 6
+    1        5  4  6
+    1          7 8
+    1         7   8
+    1      107     899
+    1
+ 00000000000000000"""]
+
+name = input("What is your name? ")
+print("""Welcome {}, to hangman. If you don't know how to play the rules are simple,
+you must try to guess a random word, leter by letter, you have 10 wrong guesses.
+If you guess the word before your attempts run out then you win.
+Good luck and have fun
+""".format(name))
+
+print("This is your word to guess")
+random_word()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
