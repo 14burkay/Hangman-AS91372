@@ -25,7 +25,7 @@ def users_guess(already_guessed):
     while guess != False: #keeps looping until the user inputs a correct input
         global players_guess
         players_guess = input("""
-Please guess a letter """)
+Please guess a letter """).lower()
         if len(players_guess) > 1: # check the input is only one letter
             print("Please try again, your input was more than one letter. ")
                 
